@@ -180,7 +180,43 @@
         <img src="img/maincontents005.png" border="1"/><br>
         <br><br>
         <h3><a name="addcontents">add関数の中身</a></h3>
-        
+        add関数の中身を解説していきます。<br>
+        <br>
+        <table border="1"><tr><td><code>
+          /* iからjまで加算して結果を戻す関数 */
+        </center></td></tr></table>
+        コメントなので無視します。<br>
+        <br>
+        <table border="1"><tr><td><code>
+         int add(int i, int j)
+        </center></td></tr></table>
+        「add関数」であることを明示しています。<br>
+        それに合わせて、「i」「j」という箱が用意されます。<br>
+        メイン関数から「1」「10」が渡されていますので、<br>
+        それぞれの箱に入ります。<br>
+        <img src="img/addcontents001.png" border="1"/><br>
+        <br>
+        <table border="1"><tr><td><code>
+         {
+        </center></td></tr></table>
+        add関数のブロックが始まります。<br>
+        <br>
+        <table border="1"><tr><td><code>
+         int n, sum = 0;
+        </center></td></tr></table>
+        「n」「sum」という箱を用意します。<br>
+        「sum」という箱には「0」が入っています。<br>
+        <img src="img/addcontents002.png" border="1"/><br>
+        <br>
+        <table border="1"><tr><td><code>
+         for (n = i; n <= j; n++)
+        </center></td></tr></table>
+        この行はfor文といい、繰り返しの処理を行います。<br>
+        まず、iの中身をnの箱にもコピーします。<br>
+        iには「1」が入っているので、nも「1」になります。<br>
+        <img src="img/addcontents003.png" border="1"/><br>
+        <br>
+        次に、「n」の箱に入っている値が「j」以下である間、処理を繰り返します。<br>
         
         
       </center></td></tr></table>
