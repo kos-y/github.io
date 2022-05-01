@@ -10,6 +10,10 @@
         <h3><a name="flow">プログラムの流れ</a></h3>
         先ほどのプログラムを読んでいきます。<br>
         各処理の細かいことは追々解説しますので、ここでは簡単に説明します。<br>
+        <font color="red">
+        ※ここでは独自の言い回しで解説している部分があります。<br>
+        　厳密には意味合いが違っている場合があります。<br>
+        </font>
         <br>
         さてプログラムを読み解くために意識することがあります。<br>
         それは「<font color="red"><b>プログラムは基本的に上から下に流れる。</b></font>」というものです。<br>
@@ -81,7 +85,7 @@
         </center></td></tr></table>
         この最初に実行される関数のことを、メイン関数とは別に<br>
         「<font color="red"><b>エントリーポイント</b></font>」とも呼ぶことがあります。<br>
-        <img src="img/main001.png" border="1"/>
+        <img src="img/main001.png" border="1"/><br>
         <br>
         関数の中身は「{」から「}」の間に記述されます。<br>
         これを「<font color="red"><b>ブロック</b></font>」と呼びます。<br>
@@ -93,7 +97,32 @@
         </center></td></tr></table>
         になります。<br>
         <br><br>
-        <h3><a name="maincontents">メイン関数の内容</a></h3>
+        <h3><a name="header">メイン関数より上の記述</a></h3>
+        メイン関数より上側にある記述について解説していきます。<br>
+        <br>
+        まずは、
+        <table border="1"><tr><td><code>
+          #include &lt;stdio.h&gt;
+        </center></td></tr></table>
+        ですが、C言語にはプログラムを書きやすくするために<br>
+        便利な関数が初めから用意されています。<br>
+        中には「画面にテキストを表示する関数」が準備されており、<br>
+        その関数を使うために、この記述を記載する必要があります。<br>
+        この記述がないと、画面に表示することができません。<br>
+        <img src="img/header001.png" border="1"/><br>
+        <br>
+        次に、
+        <table border="1"><tr><td><code>
+          int add(int i, int j);
+        </center></td></tr></table>
+        ですが、これは「下側にadd関数がある」と、予告しています。<br>
+        プログラムは上から下に流れるため、この直後にあるメイン関数は、<br>
+        「add関数の存在」は知らないことになります。<br>
+        <br>
+        それを伝えるために、メイン関数の上側にこの記述をすることで、<br>
+        「下側にadd関数がある」という予告します。<br>
+        これを「<font color="red"><b>関数のプロトタイプ宣言</b></font>」と言います。<br>
+        <img src="img/header002.png" border="1"/><br>
         
       </center></td></tr></table>
       <hr>
