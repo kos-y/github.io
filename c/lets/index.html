@@ -119,6 +119,24 @@
           &nbsp;&nbsp;&nbsp;&nbsp;return sum;<br>
           }
         </code></td></tr></table>
+        <br><br>
+        <h3><a name="build">コンパイルとビルドについて</a></h3>
+        このあとプログラムを「コンパイル」するのですが、<br>
+        Visual Studioには別に「ビルド」という言葉があります。<br>
+        <br>
+        まず、コンパイルはプログラムをアプリケーションに変換する作業<br>
+        ということを前に説明しました。<br>
+        これは厳密には間違っています。<br>
+        実は「アプリケーション」ではなく「中間ファイル」に変換する作業なのです。<br>
+        <img src="img/build001.png" border="1"/><br>
+        <br>
+        規模が大きいプログラムでは、個のソースファイルが複数作られていることが多いです。<br>
+        ソースファイルの数だけ中間ファイルが作られます。<br>
+        その中間ファイルを1つにまとめることで「アプリケーション」が作られます。<br>
+        これを「<b><font color="red">リンク</font></b>」と言います。<br>
+        <img src="img/build002.png" border="1"/><br>
+        <br>
+        この「コンパイル」と「リンク」の一連の流れのことを「<b><font color="red">ビルド</font></b>」と呼びます。<br>
       </td></tr></table>
       <hr>
       <a href="../../index.html">IT入門・研究室</a> | <a href="../index.html">C言語入門</a>
