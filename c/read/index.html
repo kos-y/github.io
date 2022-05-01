@@ -123,8 +123,39 @@
         「下側にadd関数がある」という予告します。<br>
         これを「<font color="red"><b>関数のプロトタイプ宣言</b></font>」と言います。<br>
         <img src="img/header002.png" border="1"/><br>
+        <br>
+        次にある
+        <table border="1"><tr><td><code>
+          /* 1から10まで加算する */
+        </center></td></tr></table>
+        については、「<font color="red"><b>コメント</b></font>」と呼ばれています。<br>
+        「/*」から「*/」に囲まれている範囲は何が書かれていても、コンパイラが無視します。<br>
+        そのために、何が書かれていても、プログラムの動作には関係ありません。<br>
+        <br>
+        これは処理の補足説明や注意事項などを記載して、プログラムを読みやすくします。<br>
         <br><br>
         <h3><a name="maincontents">メイン関数の中身</a></h3>
+        メイン関数の中身を説明します。<br>
+        <br>
+        最初に実行されるのは、
+        <table border="1"><tr><td><code>
+          int sum;
+        </center></td></tr></table>
+        という処理です。<.br
+        これは、「sum」という名前の箱を用意しています。<br>
+        <img src="img/maincontents001.png" border="1"/><br>
+        <br>
+        <table border="1"><tr><td><code>
+          /* 1から10まで加算する */
+        </center></td></tr></table>
+        コメントなので無視します。<br>
+        <br>
+        <table border="1"><tr><td><code>
+          sum = add(1, 10);
+        </center></td></tr></table>
+        add関数に対して、「1」と「10」を渡して呼び出します。<br>
+        これによって、add関数が実行され、実行された結果が「sum」という箱の中に入ります。<br>
+        <img src="img/maincontents002.png" border="1"/>
         
       </center></td></tr></table>
       <hr>
