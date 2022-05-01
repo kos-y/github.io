@@ -61,6 +61,40 @@
           &nbsp;&nbsp;&nbsp;&nbsp;return sum;<br>
           }
         </code></tr></td></table>
+        <br><br>
+        <h3><a name="main">メイン関数から始まる</a></h3>
+        C言語は「<font color="red"><b>必ずメイン関数から開始</b></font>」されます。<br>
+        この関数ですね。<br>
+        <table border="1"><tr><td><code>
+          /* メイン関数 */<br>
+          int main()<br>
+          {<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;int sum;<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;/* 1から10まで加算する */<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;sum = add(1, 10);<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;printf("計算結果：%d\n", sum);<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;return 0;<br>
+          }
+        </center></td></tr></table>
+        この最初に実行される関数のことを、メイン関数とは別に<br>
+        「<font color="red"><b>エントリーポイント</b></font>」とも呼ぶことがあります。<br>
+        <img src="img/main001.png" border="1"/>
+        <br>
+        関数の中身は「{」から「}」の間に記述されます。<br>
+        これを「<font color="red"><b>ブロック</b></font>」と呼びます。<br>
+        <img src="img/main002.png" border="1"/><br>
+        <br>
+        なので、上のプログラムの場合、一番最初に実行される処理は<br>
+        <table border="1"><tr><td><code>
+          int sum;
+        </center></td></tr></table>
+        になります。<br>
+        <br><br>
+        <h3><a name="maincontents">メイン関数の内容</a></h3>
+        
       </center></td></tr></table>
       <hr>
       <a href="../../index.html">IT入門・研究室</a> | <a href="../index.html">C言語入門</a>
