@@ -17,6 +17,50 @@
         <img src="img/flow001.png" border="1"/><br>
         これを前提に読み解いていきます。<br>
         <br><br>
+        <h3><a name="func">C言語における関数</a></h3>
+        C言語は、小さい機能ごとに分割してプログラムを記述します。<br>
+        例えば...<br>
+        <ul>
+          <li>画面に表示する処理</li>
+          <li>プレイヤーを操作する処理</li>
+          <li>ダメージを計算する処理</li>
+          <li>計算したダメージをHPから減らす処理</li>
+        </ul>
+        といった感じで、処理を分割して、仕様通りの順番にこれらを呼び出していきます。<br>
+        この分割した状態のプログラムを「<font color="red"><b>関数</b></font>」と呼んでいます。<br>
+        <img src="img/func001.png" border="1"/><br>
+        <br>
+        今回のプログラムは次の2つが関数です。<br>
+        <b>main関数</b>
+        <table border="1"><tr><td><code>
+          /* メイン関数 */<br>
+          int main()<br>
+          {<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;int sum;<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;/* 1から10まで加算する */<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;sum = add(1, 10);<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;printf("計算結果：%d\n", sum);<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;return 0;<br>
+          }
+        </center></td></tr></table>
+        <b>add関数</b>
+        <table border="1"><tr><td><code>
+          /* iからjまで加算して結果を戻す関数 */<br>
+          int add(int i, int j)<br>
+          {<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;int n, sum = 0;<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;for (n = i; n <= j; n++)<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;{<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sum += n;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;return sum;<br>
+          }
+        </code></tr></td></table>
       </center></td></tr></table>
       <hr>
       <a href="../../index.html">IT入門・研究室</a> | <a href="../index.html">C言語入門</a>
