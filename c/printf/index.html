@@ -8,7 +8,37 @@
       <hr>
       <table><tr><td>
         <h3><a name="hello">こんにちは！世界</a></h3>
-      </center></td></tr></table>
+        C言語に限らず、プログラミング言語を学習する最初のステップとして、<br>
+        『 「Hello! World」と表示する』というプログラムを学ぶことが多いです。<br>
+        <br>
+        ただ単に「Hello! World」と表示させるだけのプログラムです。<br>
+        Visual Studioでプロジェクトを作成し、このプログラムを入力してみてください。<br>
+        <br>
+        <table border="1"><tr><td><code>
+          #include &lt;stdio.h&gt;<br>
+          <br>
+          int main()<br>
+          {<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;printf("Hello! World");<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;return 0;<br>
+          }
+        </center></td></tr></table>
+        入力が終わったら、ビルド・実行します。<br>
+        そうすると画面に「Hello! World」と表示されます。<br>
+        <br>
+        <br>
+        <h3><a name="printf">printf関数について</a></h3>
+        画面にテキストを表示するには<b><font color="red">「printf」(ぷりんとえふ)</font></b>という関数を使います。<br>
+        <br>
+        この関数を使うには、プログラムの最初に「<code>#include &lt;stdio.h&gt;</code>」を記述します。<br>
+        この記述がないと使えません。<br>
+        <img src="img/printf001.png" border="1"/><br>
+        <br>
+        そして画面に表示するテキストは「"」で囲んで記載します。<br>
+        この「"」に囲まれたテキストを「<b><font color="red">文字列</font></b>」と言います。<br>
+        <img src="img/printf002.png" border="1"/><br>
+      </td></tr></table>
       <hr>
       <a href="../../index.html">IT入門・研究室</a> | <a href="../index.html">C言語入門</a>
       <table><tr><td><small>
