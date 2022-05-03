@@ -42,6 +42,55 @@
         そして、「printf(」～「);」の間に表示させたい文字列を記述することによって、<br>
         その内容が画面に表示されます。<br>
         <img src="img/printf003.png" border="1"/><br>
+        <br><br>
+        <h3><a name="newline">改行する</a></h3><br>
+        文字列を改行するには特殊な方法を使います。<br>
+        仮に、
+        <table border="1"><tr><td><code>
+        printf("あいうえお");<br>
+        printf("かきくけこ");<br>
+        printf("さしすせそ");
+        </code></td></table>
+        としても、「あいうえおかきくけこさしすせそ」と改行せずに表示されます。<br>
+        <br>
+        その場合は、文字列の中に「\n」を入れることによって改行します。<br>
+        <table border="1"><tr><td><code>
+          #include &lt;stdio.h&gt;<br>
+          <br>
+          int main()<br>
+          {<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;printf("あいうえお\nかきくけこ\nさしすせそ");<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;return 0;<br>
+          }
+        </center></td></tr></table>
+        これによって「\n」の位置で改行されるため、<br>
+        「あいうえお<br>
+        　かきくけこ<br>
+        　さしすせそ」<br>
+        と表示されます。<br>
+        <img src="img/newline001.png" border="1"/><br>
+        <br>
+        ただ、せっかく実行結果は改行されているのにソースコードでは改行されていません。<br>
+        これでは非常に読みづらいので、次のように書くと良いでしょう。
+        <table border="1"><tr><td><code>
+          #include &lt;stdio.h&gt;<br>
+          <br>
+          int main()<br>
+          {<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;printf("あいうえお\n");<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;printf("かきくけこ\n");<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;printf("さしすせそ\n");<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;return 0;<br>
+          }
+        </center></td></tr></table>
+        こんな感じで、各printfの最後に「\n」を入れることによって、<br>
+        次のprintfが次の行に表示されるようになり、読みやすくなります。<br>
+        <br>
+        以降、本C言語入門では、特に理由のない限りは、printfの最後に「\n」を入れるように<br>
+        しています。
+        
       </td></tr></table>
       <hr>
       <a href="../../index.html">IT入門・研究室</a> | <a href="../index.html">C言語入門</a>
