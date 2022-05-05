@@ -11,6 +11,22 @@
         データを入力するためには、入力したデータを覚えておくための「箱」が必要です。<br>
         この箱のことを「<b><font color="red">変数</font></b>」と呼びます。<br>
         <img src="img/howto001.png" border="1"/><br>
+        <h3><a name="type">変数の型</a></h3>
+        変数には扱うデータに応じて、いくつか種類があります。<br>
+        こういった種類のことを「<b><font color="red">型</font></b>」と呼びます。<br>
+        <br>
+        全てではありませんが、次のようなものがあります。<br>
+        <table border="1">
+            <tr><th>型</th><th>概要</th><th>扱える範囲</th><th>メモリ上のサイズ</th></tr>
+            <tr><td>char</td><td>文字型</td><td>半角1文字</td><td>1バイト</td></tr>
+            <tr><td>short</td><td>整数型</td><td>-32,768 ～ 32,767</td><td>2バイト</td></tr>
+            <tr><td>unsigned short</td><td>整数型</td><td>0 ～ 65,535</td><td>2バイト</td></tr>
+            <tr><td>int<br>long</td><td>整数型</td><td>-2,147,483,648<br>&nbsp;～ 2,147,483,647</td><td>4バイト</td></tr>
+            <tr><td>unsigned int<br>unsigned long</td><td>整数型</td><td>0 ～ 4,294,967,295</td><td>4バイト</td></tr>
+            <tr><td>float</td><td>単精度浮動小数点型</td><td>3.4E-38 ～ 3.4E+38</td><td>4バイト</td></tr>
+            <tr><td>double</td><td>倍精度浮動小数点型</td><td>1.7E-308 ～ 1.7E+308</td><td>8バイト</td></tr>
+        </table>
+
       </td></tr></table>
       <hr>
       <a href="../../index.html">IT入門・研究室</a> | <a href="../index.html">C言語入門</a>
