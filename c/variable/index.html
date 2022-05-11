@@ -94,6 +94,48 @@
           <tr><td>double型</td><td><code>d = 6.7;</code></td></tr>
         </table>
         <br><br>
+        <h3><a name="show">printf関数で表示</a></h3>
+        変数はprintf関数で画面に表示することができます。<br>
+        各変数の型を表示するプログラムです。<br>
+        <table border="1"><tr><td><code>
+          #include &lt;stdio.h&gt;<br>
+          <br>
+          int main()<br>
+          {<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;char c = 'A';<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;short s = 0;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;int i = 1;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;long l = 2L;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;float f = 3.4f;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;double d = 5.6;<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;printf("char型  ：%c\n", c);<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;printf("short型 ：%d\n", s);<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;printf("int型   ：%d\n", i);<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;printf("long型  ：%ld\n", l);<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;printf("float型 ：%f\n", f);<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;printf("double型：%lf\n", d);<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;return 0;<br>
+          }
+        </code></td></tr></table>
+        <br>
+        int型を例にすると、文字列中の「<b><font color="red">%d</font></b>」の箇所に変数の値が表示されます。<br>
+        変数の型ごとに、次の文字が変数の値に置き換わります。
+        <table border ="1">
+          <tr><th>型</th><th>値が表示される文字</th></tr>
+          <tr><td>char型</td><td><code>%c</code></td></tr>
+          <tr><td>short型</td><td><code>%d</code></td></tr>
+          <tr><td>int型</td><td><code>%d</code></td></tr>
+          <tr><td>long型</td><td><code>%ld</code></td></tr>
+          <tr><td>float型</td><td><code>%f</code></td></tr>
+          <tr><td>double型</td><td><code>%lf</code></td></tr>
+        </table>
+        <br>
+        そして、文字列の後ろに「<code>, (変数)</code>」とすることによって、<br>
+        その変数の値が表示されます<br>
+        <img src="img/show001.png" border="1"/><br>
+        
       </td></tr></table>
       <hr>
       <a href="../../index.html">IT入門・研究室</a> | <a href="../index.html">C言語入門</a>
