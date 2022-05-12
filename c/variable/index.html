@@ -135,6 +135,23 @@
         そして、文字列の後ろに「<code>, (変数)</code>」とすることによって、<br>
         その変数の値が表示されます<br>
         <img src="img/show001.png" border="1"/><br>
+        <br>
+        また、複数の変数を同時に表示することも可能です。<br>
+        <table border="1"><tr><td><code>
+          #include &lt;stdio.h&gt;<br>
+          <br>
+          int main()<br>
+          {<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;int nen = 3;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;char kumi = 'B';<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;printf("%d年%c組\n", nen, kumi);<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;return 0;<br>
+          }
+        </code></td></tr></table>
+        この場合は、前から順番に割り当てられますので、「3年B組」と表示されます。<br>
+        <img src="img/show002.png" border="1"/><br>
         
       </td></tr></table>
       <hr>
