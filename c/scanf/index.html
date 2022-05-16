@@ -46,7 +46,25 @@
         また、scanf関数で入力可能データは、変数の型に依存します。<br>
         そのため、「全角文字」や「２文字以上の文字列」については特殊な記載が必要となります。<br>
         これについてはのちに解説します。<br>
-        
+        <br><br>
+        <h3><a name="multi">複数の数値をまとめて入力</a></h3>
+        値を２つ入力する場合は、次のようにします。<br>
+        <table border="1"><tr><td><code>
+          #define _CRT_SECURE_NO_WARNINGS<br>
+          #include &lt;stdio.h&gt;<br>
+          <br>
+          int main()<br>
+          {<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;int a, b;<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;printf("何か数値を入力：");<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;scanf("%d %d", &amp;a, &amp;b);<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;printf("入力された数値は「%d」と「%d」ですね。\n", a, b);<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;return 0;<br>
+          }
+        </code></td></tr></table>
         
       </td></tr></table>
       <hr>
